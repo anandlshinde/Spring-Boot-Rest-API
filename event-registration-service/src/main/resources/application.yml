@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /event-service
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/eventservice
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: EVENT-REGISTRATION-SERVICE
+  security:
+    user:
+      name: user
+      password: pass
+
+logging:
+  pattern:
+    console: d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n

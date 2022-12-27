@@ -1,0 +1,16 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /event-service-consumer
+
+spring:
+  application:
+    name: EVENT-REGISTRATION-SERVICE-CONSUMER
+
+event:
+  baseurl: http://localhost:8080/event-service
+  auth:
+    username: user
+    password: pass
+
+
